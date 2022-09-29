@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" context="width=device-width,initial-scale=1.0">
+	<title>Table</title>
+	<style>
+		form{
+			padding:20px;
+			align-items:center;
+			margin:2% 2% 0 0;
+			}
+		input{
+			padding:5px;
+			margin:10px;
+			align-items:right;
+		}
+		fieldset{
+			display:inline;
+		}
+		label{
+			padding:0 10px 0 0;
+		}
+		
+	</style>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Application form</legend>
+				<label for="fname">Full Name</label>
+				<input type="text" id="fname" ><br>
+				<label for="email">Email</label>
+				<input type="email" id="email" ><br>
+				<label for="gender">Gender</label>
+				<input type="radio" id="male" name="gender">
+				<label for="male">Male</label>
+				<input type="radio" id="female" name="gender">
+				<label for="female">Female</label><br>
+				<label for="nationality">Nationality</label>
+				<select id="nationality">
+					<option>Indian</option>
+					<option>United Kingdom</option>
+					<option>Pakisthan</option>
+					<option>Africa</option>
+					<option>Netharland</option>
+					<option>Singapore</option>
+				</select><br>
+				<label for="skills">Skills</label>
+				<input type="checkbox" id="for" value="ASP.net">ASP.net
+				<input type="checkbox" id="for" value="jQuery">jQuery<br>
+				<input type="checkbox" id="for" value="MVC">MVC
+				<input type="checkbox" id="for" value="Sql Server">Sql Server<br>
+				<label for="post">Post applying for</label>
+				<input type="radio" id="post" name="applypost">Trainee
+				<input type="radio" id="post" name="applypost">Software Engineer<br>
+				<input type="radio" id="post" name="applypost">Team Leader
+				<input type="radio" id="post" name="applypost">Project Manager<br>
+				<label for="upload">Upload Resume:</label>
+				<input type="file" id="upload"><br>
+				<label for="postresume">Paste your resume</label>
+				<textarea rows="5" cols="25" placeholder="sample resume text..."></textarea><br>
+				<input type="checkbox" id="notify">
+				<label for="notify">Notify me the status via Email</label><br>
+				<input type="radio" id="agree" name="agree">
+				<label for="agree">I agree the terms & conditions</label><br>
+				<button type="submit">Submit</button>
+				<input type="reset">
+			</fieldset>
+		</form>
+	</body>
+</html>
